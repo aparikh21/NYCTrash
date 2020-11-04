@@ -101,4 +101,4 @@ The winter months of December, January and February have consistently had the lo
 
 The fall months and spring months have more or less followed similar trends (the decline in the fall line after 2015 is misleading because the line is severely influenced by 2020 fall trash collection.) It would be interesting to investigate the reason behind this drop in tons of trash collected in the fall months of 2020, but it would presumably be because of the pandemic.  
 
-Yearly changes in trash collection seems to affect seasonal consumption evenly because the four lines seem to follow similar trends!
+Yearly changes in trash collection seems to affect seasonal consumption evenly because the four lines seem to follow similar trends !
