@@ -5,8 +5,8 @@ NYCTrash <- readr::read_csv(
   janitor::clean_names()
 
 NYCTrash <- NYCTrash %>%
-  mutate(year = str_extract(NYC_Trash$month, "^.{4}"),
-         mon = str_extract(NYC_Trash$month, "[^/]+$")) %>%
+  mutate(year = str_extract(NYCTrash$month, "^.{4}"),
+         mon = str_extract(NYCTrash$month, "[^/]+$")) %>%
   select(-c(1)) %>%
   rename(month = mon) %>%
   relocate("year", "month") %>%
