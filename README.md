@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+![R-CMD-check](https://github.com/aparikh21/NYCTrash/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 The goal of NYCTrash is to understand chnages in monthly trash patterns
