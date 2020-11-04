@@ -177,4 +177,4 @@ trash collected in the fall months of 2020, but it would presumably be
 because of the pandemic.
 
 Yearly changes in trash collection seems to affect seasonal consumption
-evenly because the four lines seem to follow similar trends\!
+evenly because the four lines seem to follow the same trends\!
