@@ -9,7 +9,7 @@ NYC_Trash <- NYC_Trash %>%
          mon = str_extract(NYC_Trash$month, "[^/]+$")) %>%
   select(-c(1)) %>%
   rename(month = mon) %>%
-  relocate("month", "year") %>%
+  relocate("year", "month") %>%
   rename(
     community_district = communitydistrict,
     refuse_tons_collected = refusetonscollected,
@@ -20,4 +20,4 @@ NYC_Trash <- NYC_Trash %>%
     leaves_organics = leavesorganictons,
     xmas_tress = xmastreetons
   )
-usethis::use_data(NYC_Trash)
+usethis::use_data(NYC_Trash, overwrite = TRUE)
