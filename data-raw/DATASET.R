@@ -1,10 +1,10 @@
 library(tidyverse)
-NYC_Trash <- readr::read_csv(
+NYCTrash <- readr::read_csv(
   "NYC_Monthly_Trash.csv"
 ) %>%
   janitor::clean_names()
 
-NYC_Trash <- NYC_Trash %>%
+NYCTrash <- NYCTrash %>%
   mutate(year = str_extract(NYC_Trash$month, "^.{4}"),
          mon = str_extract(NYC_Trash$month, "[^/]+$")) %>%
   select(-c(1)) %>%
@@ -20,4 +20,4 @@ NYC_Trash <- NYC_Trash %>%
     leaves_organics = leavesorganictons,
     xmas_tress = xmastreetons
   )
-usethis::use_data(NYC_Trash, overwrite = TRUE)
+usethis::use_data(NYCTrash, overwrite = TRUE)
