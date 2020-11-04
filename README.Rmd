@@ -51,6 +51,7 @@ knitr::opts_chunk$set(
 
 
 ```{r message = FALSE, warning = FALSE, fig.width= 7, fig.width = 7}
+NYCTrash
 time <- NYCTrash %>%
   group_by(year, borough) %>%
   summarize(refuse_tons_collected = sum(refuse_tons_collected))

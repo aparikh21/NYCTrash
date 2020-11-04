@@ -82,6 +82,23 @@ knitr::opts_chunk$set(
 ```
 
 ``` r
+NYCTrash
+#> # A tibble: 21,048 x 12
+#>    year  month borough community_distr… refuse_tons_col… paper_tons_coll…
+#>    <chr> <chr> <chr>   <chr>                       <dbl>            <dbl>
+#>  1 <NA>  " 11" Manhat… 01                           625.            119. 
+#>  2 <NA>  " 03" Manhat… 01                           726              NA  
+#>  3 <NA>  " 08" Manhat… 01                           628.             82.4
+#>  4 <NA>  " 08" Manhat… 01                           695.             NA  
+#>  5 <NA>  " 09" Manhat… 01                           633.            117. 
+#>  6 <NA>  " 04" Brookl… 07                          3479.            279. 
+#>  7 <NA>  " 08" Brookl… 07                          3648.            515. 
+#>  8 <NA>  " 01" Brookl… 07                          3157.            437. 
+#>  9 <NA>  " 11" Brookl… 07                          3730.             NA  
+#> 10 <NA>  " 08" Brookl… 07                          3696.            497. 
+#> # … with 21,038 more rows, and 6 more variables: mpg_tons_collected <dbl>,
+#> #   organic_tons_collected <dbl>, school_organics <dbl>, leaves_organics <dbl>,
+#> #   xmas_tress <dbl>, borough_id <dbl>
 time <- NYCTrash %>%
   group_by(year, borough) %>%
   summarize(refuse_tons_collected = sum(refuse_tons_collected))
