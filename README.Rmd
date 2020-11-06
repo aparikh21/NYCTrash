@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 ![R-CMD-check](https://github.com/aparikh21/NYCTrash/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
-The goal of NYCTrash is to understand chnages in monthly trash patterns in NYC by borough.
+The goal of NYCTrash is to understand changes in monthly trash patterns in NYC by borough.
 
 ## Installation
 
@@ -37,9 +37,7 @@ devtools::install_github("aparikh21/NYCTrash")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
+```{r example, include=FALSE}
 library(NYCTrash)
 library(mosaic)
 library(tidyverse)

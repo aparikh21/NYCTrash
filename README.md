@@ -8,7 +8,7 @@
 ![R-CMD-check](https://github.com/aparikh21/NYCTrash/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
-The goal of NYCTrash is to understand chnages in monthly trash patterns
+The goal of NYCTrash is to understand changes in monthly trash patterns
 in NYC by borough.
 
 ## Installation
@@ -28,58 +28,6 @@ devtools::install_github("aparikh21/NYCTrash")
 ```
 
 ## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(NYCTrash)
-library(mosaic)
-#> Registered S3 method overwritten by 'mosaic':
-#>   method                           from   
-#>   fortify.SpatialPolygonsDataFrame ggplot2
-#> 
-#> The 'mosaic' package masks several functions from core packages in order to add 
-#> additional features.  The original behavior of these functions should not be affected by this.
-#> 
-#> Attaching package: 'mosaic'
-#> The following objects are masked from 'package:dplyr':
-#> 
-#>     count, do, tally
-#> The following object is masked from 'package:Matrix':
-#> 
-#>     mean
-#> The following object is masked from 'package:ggplot2':
-#> 
-#>     stat
-#> The following objects are masked from 'package:stats':
-#> 
-#>     binom.test, cor, cor.test, cov, fivenum, IQR, median, prop.test,
-#>     quantile, sd, t.test, var
-#> The following objects are masked from 'package:base':
-#> 
-#>     max, mean, min, prod, range, sample, sum
-library(tidyverse)
-#> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
-#> ✓ tibble  3.0.4     ✓ purrr   0.3.4
-#> ✓ tidyr   1.1.2     ✓ stringr 1.4.0
-#> ✓ readr   1.4.0     ✓ forcats 0.5.0
-#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-#> x mosaic::count()            masks dplyr::count()
-#> x purrr::cross()             masks mosaic::cross()
-#> x mosaic::do()               masks dplyr::do()
-#> x tidyr::expand()            masks Matrix::expand()
-#> x dplyr::filter()            masks stats::filter()
-#> x ggstance::geom_errorbarh() masks ggplot2::geom_errorbarh()
-#> x dplyr::lag()               masks stats::lag()
-#> x tidyr::pack()              masks Matrix::pack()
-#> x mosaic::stat()             masks ggplot2::stat()
-#> x mosaic::tally()            masks dplyr::tally()
-#> x tidyr::unpack()            masks Matrix::unpack()
-library(ggplot2)
-knitr::opts_chunk$set(
-  tidy=FALSE,     # display code as typed
-  size="small")   # slightly smaller font for code
-```
 
 ``` r
 NYCTrash
